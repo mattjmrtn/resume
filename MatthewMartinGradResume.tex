@@ -1,8 +1,8 @@
-% Matthew J. Martin
+ % Matthew J. Martin
 % June 20, 2016
 % Resume
 
-\documentclass{myresume}
+\documentclass{mygradresume}
 
 \usepackage[hidelinks]{hyperref}
 \usepackage{nopageno}
@@ -18,47 +18,53 @@
 \section{Education}
 \textbf{Colby College}, Waterville, ME\hfill\textbf{Bachelor of Arts, May 2018}
 
-\textit{Majors}: Government and Computer Science, \textit{Minor}: Mathematics\hfill\textbf{Overall GPA: 3.83/4.00}
+\textit{Majors}: Government and Computer Science \hfill\textbf{GPA: 3.83/4.00}
 
-\textit{Honors}: Dean's List: Fall 2014, Fall \& Spring 2015, Fall \& Spring 2017
+\textit{Minor}: Mathematics
 
-\textit{Relevant Coursework}: Robotics, Introduction to Vision and Robotics, Object-Oriented Systems,\\Software Design and Modelling, Data Structures and Algorithms, Data Analysis and Visualization,\\Parallel and Distributed Processing, Computer Organization, Linear Algebra, Statistics
+\textit{Honors}: Cum Laude, Distinction in Computer Science, \\\hspace*{2em}Dean's List: Fall 2014, Fall \& Spring 2015, Fall \& Spring 2017
 
-\section{Programming Experience and Projects}
+\textit{Advisors}: Walter Hatch, Government and Bruce Maxwell, Computer Science
 
-\projecttype{Research}
-\project{Better Predictors for Issue Lifetime}{Lead Researcher}{2016}{
-	\item I developed a simpler and more accurate method of predicting issue lifetime in software projects than the current state of the art using machine learning optimizations and  careful feature selection
-	\vspace{-.5em}
-	\item I co-authored a paper documenting this finding, which is currently under review by the Journal of Systems and Software
-	}
+\section{Research Experience}
 
-\projecttype{Robotics}
+\projecttype{Political Science Research}
+
+\project{Case Study: Internet Voting in Estonia}{Sole Researcher}{2018}{
+	\item Investigated the strengths and weaknesses of Estonia's Internet voting infrastructure.
+	\item Determined the primary factors that contributed to the success of Internet voting in Estonia, and examined how they might be applied to other countries.
+}
+\project{Election Cybersecurity in the United States}{Sole Researcher}{2017}{
+	\item Conducted a detailed analysis of the security of voting technology in the United States.
+	\item Identified the major shortcomings of voting machines and voter registration systems, and provided recommendations for addressing them.
+	\item Resulted in a paper and oral presentation.
+}
+
+\projecttype{Computer Science Research \& Projects}
+
 \project{Multi-floor Wheeled Robot}{Co-Developer}{2017}{
-	\item This wheeled robot is able to access multiple floors of a building by finding an elevator with the help of a person
-	\vspace{-.5em}
-	\item The process involves human-robot interaction, face recognition, color following, and line detection to achieve its goal
+	\item Wrote the software to control a wheeled robot that could access multiple floors of a building by finding an elevator with the help of a person.
+	\item The process involved human-robot interaction, face recognition, color following, and line detection to achieve its goal.
 }
-\project{Line Following Robot}{Co-Developer}{2016}{
-	\item A robot made to accomplish a few tasks involving line following, implemented in Python using a PID controller
-}
-
-\projecttype{Computer Vision/Graphics}
-\project{Augmented Reality Chess}{Sole Developer} {2017} {
-	\item An AR chess game written in C++ that allows two users to play the game by physically selecting and moving virtual pieces while the entire board and pieces are projected digitally on to a video stream
-}
-\project{Coin Counter}{Co-Developer}{2016}{	
-	\item A Matlab program that takes in an image of several small objects (including coins) on a tabletop, segments and classifies each object in the scene, and outputs the total amount of money present
-}
-
-\projecttype{Java Development}
 \project{Bantam Java Compiler and Optimizer}{Team Member}{2017}{
 	\item A compiler and optimizer written from scratch for compiling a subset of the Java language, called Bantam Java
-	\vspace{-.5em}
-	\item Worked on a team of four, focusing on software design principles, using the Visitor pattern and other OO strategies
 }
-\project{Easy Calculator}{Sole Developer}{2015}{
-	\item A user-friendly calculator app for Android devices made with modern design in mind}
+\project{Augmented Reality Chess}{Sole Developer} {2017} {
+	\item An AR chess game written in C++ that allows two users to play the game by physically selecting and moving virtual pieces while the entire board and pieces are projected digitally on to a video stream.
+}
+\project{Better Predictors for Issue Lifetime}{Lead Researcher}{2016}{
+	\item Developed a simpler and more accurate method of predicting issue lifetime in software projects than the current state of the art using machine learning optimizations and careful feature selection.
+}
+\project{Line Following Robot}{Co-Developer}{2016}{
+	\item A robot made to accomplish a few tasks involving following lines taped on the floor, implemented in Python.
+}
+\project{Coin Counter}{Co-Developer}{2016}{	
+	\item A Matlab program that takes in an image of several small objects (including coins) on a tabletop, segments and classifies each object in the scene, and outputs the total amount of money present.
+}
+\project{Colby College Computer Science Department Website}{Co-Developer}{2016}{
+	\item Redesigned and now maintaining the official department website for Colby CS: \href{http://cs.colby.edu}{cs.colby.edu}.
+	\item Rebuilt the site from scratch, and it is now accessed by every computer science student at Colby on a daily basis.
+}
 
 %\project{Advanced Data Visualization}{Co-Developer}{2016}{	
 %	\item A fully functional data visualization application written in Python that uses object tracking to allow the user to pan, scale, and rotate the data simply by moving their hands in front of the screen
@@ -69,11 +75,7 @@
 %}
 
 %\projecttype{Web Development}
-%\project{Colby College Computer Science Department Website}{Co-Developer}{2016}{
-%	\item Redesigned and now maintaining the official department website for Colby CS: \href{http://cs.colby.edu}{cs.colby.edu}
-%	\vspace{-.5em}
-%	\item Rebuilt the site from the ground up, and it is now accessed by every computer science student at Colby on a daily basis
-%	}
+%
 %\project{Personal Site}{Sole Developer}{2016}{
 %	\item The domain \href{http://matthewmartin.me}{matthewmartin.me} is consistently updated with recent work, and has  detailed descriptions of my projects
 %}
@@ -83,8 +85,23 @@
 %	\item An easy to use flashlight for Android devices
 %}
 
+\section{Employment}
 
-Source code for most projects is available on \textbf{GitHub} at: \href{https://github.com/mjmartin23}{github.com/mjmartin23}
+\job{Software Developer Engineer II}{Amazon}{September 2018 - present}{
+	\item Worked on a team responsible for creating a virtual model of
+	every item that Amazon sells.
+	\item Mentored interns and new hires, wrote technical design documents, and implemented core components of this new `virtual item model' software architecture.
+}
+
+\job{Software Development Engineering Intern}{Amazon}{May - August 2017}{
+	\item Worked with experienced engineers developing Amazon's ``vision tunnels" image processing algorithm for sorting packages.
+}
+\job{Undergraduate Researcher}{North Carolina State University}{May - August 2016}{
+	\item Worked with \href{http://menzies.us}{Dr. Tim Menzies} researching hypotheses from industrial partners, mainly focusing on the ``Better Predictors for Issue Lifetime" project.
+}
+\job{Teaching Assistant}{Colby College Computer Science Department}{February 2015 - May 2018}{
+	\item Assisted students with their computer science projects during and outside of class.
+}
 
 \section{Coding Skills}
 
@@ -93,7 +110,7 @@ Source code for most projects is available on \textbf{GitHub} at: \href{https://
 	\begin{itemize}
 		\vspace{-.5em}\item Java
 		\vspace{-.75em}\item Python
-		\vspace{-.75em}\item C/C++
+		\vspace{-.75em}\item R
 		\vspace{-.75em}\item HTML/CSS
 	\end{itemize}
 \end{minipage}
@@ -102,8 +119,8 @@ Source code for most projects is available on \textbf{GitHub} at: \href{https://
 	\begin{itemize}
 		\vspace{-.5em}\item Git
 		\vspace{-.75em}\item Matlab
-		\vspace{-.75em}\item UML
-		\vspace{-.75em}\item Unix shell
+		\vspace{-.75em}\item C/C++
+		\vspace{-.75em}\item React
 	\end{itemize}
 \end{minipage}
 \begin{minipage}[t]{0.33\textwidth}
@@ -116,28 +133,15 @@ Source code for most projects is available on \textbf{GitHub} at: \href{https://
 	\end{itemize}
 \end{minipage}
 
-\section{Employment}
 
-\job{Software Developer Engineer II}{Amazon}{September 2018 - present}{
-	\item Worked on a team responsible for creating a virtual model of
-	every item that Amazon sells
-	\item 
-}
+\section{Organizations}
 
-\job{Software Development Engineering Intern}{Amazon}{May - August 2017}{
-	\item Worked with experienced engineers developing Amazon's ``vision tunnels" image processing algorithm for sorting packages
-}
-\job{Undergraduate Researcher}{North Carolina State University}{May - August 2016}{
-	\item Worked with \href{http://menzies.us}{Dr. Tim Menzies} researching hypotheses from industrial partners
-}
-\job{Teaching Assistant}{Colby College Computer Science Department}{February 2015 - present}{
-	\item Assisted students with their computer science projects during and outside of class
-}
-
-\section{Activities}
-
-\activity{Member}{Colby Hackers}{2015 - present}
-\activity{Member}{Colby College Class Council}{2015 - present}
-\activity{Member}{Colby College Men's Tennis}{2014 - present}
+\activity{Member}{Seattle Bike Brigade}{2020 - present}
+\activity{Member}{Amazon Employees for Climate Justice}{2019 - present}
+\activity{Member}{Colby College, Women in Math and Computer Science}{2016 - 2018}
+\activity{Member}{Colby Hackers}{2015 - 2018}
+\activity{Member}{Colby College Class Council}{2015 - 2018}
+\activity{Member}{Colby College Ultimate Frisbee}{2017 - 2018}
+\activity{Member}{Colby College Men's Tennis}{2014 - 2017}
 	
 \end{document}
